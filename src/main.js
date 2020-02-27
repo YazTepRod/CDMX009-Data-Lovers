@@ -1,4 +1,4 @@
-import { example } from './data.js';
+import { pokemon } from './pokemon.js';
 
-console.log(example);
+console.log(pokemon);
 
