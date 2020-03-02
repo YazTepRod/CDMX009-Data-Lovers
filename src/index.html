@@ -1,14 +1,105 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Data Lovers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="main.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Data Lovers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <section id="log-in">
+    <h1> Inicia Sesión </h1>
+    <p><input id="User" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
+    <p><input id="Password" type="text" name="Contraseña" placeholder="Contraseña"></p>
+    <a href="#menu" title="close"><button id="Login" name="Entra">Ingresar</button></a>
+    <h3>¿Eres usuario nuevo?</h3>
+    <a href="#sign-in" title="login">Crear Cuenta</a>
+  </section>
+
+  <section id="sign-in">
+    <a href="#log-in" title="close"><img src="imagenes/close (1).svg" /></a>
+    <h1> Crear Cuenta </h1>
+    <p><input id="User2" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
+    <p><input id="email" type="text" name="email1" placeholder="Correo Electrónico"></p>
+    <p><input id="Pass1" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
+    <p><input id="Pass2" type="text" name="Contraseña" placeholder="Contraseña"></p>
+   <a href="#menu" title="signin"> <button id="Login" name="Entra">CREAR CUENTA</button></a>
+  </section>
+
+
+  <section id="menu" class="homepage">
+    <h1>Bienvenidx</h1>
+    <div id="button-red">
+       <a href="#list" title="close"><button id="button-red-1" type="button">POKEMONES</button></p></a>
+       <a href="#pokemon-centers" title="close"><button id="button-red-2" type="button">CENTROS POKEMONES</button></a>
+       <a href="https://pokemongolive.com/es/" title="close"><button id="button-red-3" type="button">JUGAR</button></a>
+      <a href="https://pokemongolive.com/es/" title="close"><button id="download" type="button">DESCARGA VERSIÓN LITE</button></a>
+    </div>
+    <a href="#homepage" title="close"><button id="close" type="button">CERRAR SESIÓN</button></a>
+    <div class="button-blue">
+     <p>OFFLINE</p>
+      <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    </div>
+  </section>
+
+  <section id="list">
+    <a href="#menu" title="close"><img src="imagenes/close (2).svg" /></a>
+    <h1>POKÉMONES </h1>
+    <p><input id="Search" type="text" name="Buscar" placeholder="Búsqueda"></p>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <nav>
+      <ul>
+        <li class="submenu"><a href="#">Servicios</a><i class="far fa-caret-square-down more"></i>
+          <ul>
+            <li class="submenu"><a href="#">Servicios</a><i class="far fa-caret-square-down more"></i>
+              <ul>
+              </ul>
+    </nav>
+    <p><button id="friend" type="button">Elegir acompañante</button></p>
+
+  </section>
+
+  <section id="pokemon-file">
+    <a href="#menu" title="close"><img src="imagenes/close (2).svg" /></a>
+
+    <h3 id="pokemon-name">POKEMON</h3>
+    <h4 id="pokemon-type">TIPO</h4>
+    <div id="pokemon-image">IMAGEN</div>
+
+
+  </section>
+
+  <section id="pokemon-centers">
+    <a href="#menu" title="close"><img src="imagenes/close (2).svg" /></a>
+    <h2>CENTROS POKEMÓN</h2>
+    <div class="button-blue">
+      <p><button id="offline" type="button">OFFLINE</button>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span></p>
+    </div>
+    <div class="conteiner">
+      <h3>Zonas cercanas de Centros Pokemón</h3>
+    </div>
+    <div class="conteiner">
+      <h3>Votación para nuevos Centros Pokemón</h3>
+    </div>
+    <p><button id="vote" type="button">VOTAR</button></p>
+    <p>Si quieres sugerir un nuevo Centro Pokemón, ubicate en la zona y da click en el bóton</p>
+    <p><button id="new" type="button">NUEVO CENTRO POKEMÓN</button></p>
+  </section>
+
+  <script type="module" src="main.js"></script>
+</body>
+
 </html>

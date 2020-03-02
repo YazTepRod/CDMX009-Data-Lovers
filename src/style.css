@@ -1,0 +1,86 @@
+
+    
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  /*crea el circulo que cambia de lado*/
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  /*color azul */
+  input:checked + .slider {
+    background-color:red;
+  }
+  
+  
+  /*movimiento de circulo*/
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /*border redondos de elemento exterior*/
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  /*border redondos de elemento interior*/
+  .slider.round:before {
+    border-radius: 50%;
+  } 
+  
+  /*Menú desplegable*/
+  *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+      }
+                    
+      li{
+      list-style-type:none;
+      position:relative;
+      width:120px;
+      }
+                  
+      li a{
+      text-decoration:none;
+      display:inline-block;
+      padding:5px 10px;
+      width:120px;
+      height:30px;
+      border:1px solid #000;
+      color:#000;
+      }
+              
+      .more{
+          display:inline-block;
+          position:absolute;
+          right:0px;
+          font-size:30px;
+      }       
