@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>Data Lovers</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- shift+alt+a Primera pantalla iniciar sesión -->
   <section id="log-in">
     <h1> Inicia Sesión </h1>
-    <p><input id="User" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
-    <p><input id="Password" type="text" name="Contraseña" placeholder="Contraseña"></p>
-    <a href="#menu" title="close"><button id="Login" name="Entra">Ingresar</button></a>
+    <form>
+    <p><input id="User" class="space" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
+    <p><input id="Password" class="space" type="text" name="Contraseña" placeholder="Contraseña"></p>
+    <a href="#menu" title="close"><button id="Login" class="click" name="Entra">Ingresar</button></a>
+  </form>
+  <a href="https://www.instagram.com/pokemongoapp/?hl=es-la"><img src="instagram(1).svg"></a>
+  <a href="https://www.facebook.com/PokemonGO/"><img src="facebook.svg"></a>
+  <a href= "https://myaccount.google.com/intro"> <img src="google-hangouts.svg"></a>
     <h3>¿Eres usuario nuevo?</h3>
     <a href="#sign-in" title="login">Crear Cuenta</a>
   </section>
 
+
+<!-- Segunda pantalla Crear cuenta -->
   <section id="sign-in">
     <a href="#log-in" title="close"><img src="imagenes/close (1).svg" /></a>
     <h1> Crear Cuenta </h1>
-    <p><input id="User2" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
-    <p><input id="email" type="text" name="email1" placeholder="Correo Electrónico"></p>
-    <p><input id="Pass1" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
-    <p><input id="Pass2" type="text" name="Contraseña" placeholder="Contraseña"></p>
-   <a href="#menu" title="signin"> <button id="Login" name="Entra">CREAR CUENTA</button></a>
-  </section>
+<form>
+    <p><input id="User2" class="space2" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
+    <p><input id="email" class="space2" type="text" name="email1" placeholder="Correo Electrónico"></p>
+    <p><input id="Pass1" class="space2" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
+    <p><input id="Pass2" class="space2" type="text" name="Contraseña" placeholder="Contraseña"></p>
+   <a href="#menu" title="signin"> <button id="Login" class="click" name="Entra">CREAR CUENTA</button></a>
+  </form>
+   <h4>Iniciar con </h4>
+   <a href="https://www.instagram.com/pokemongoapp/?hl=es-la"><img src="instagram(1).svg"></a>
+   <a href="https://www.facebook.com/PokemonGO/"><img src="facebook.svg"></a>
+   <a href= "https://myaccount.google.com/intro"> <img src="google-hangouts.svg"></a>  </section>
 
 
+<!-- Tercera pantalla. Pantalla principal de Pokendia Go! Menú -->
   <section id="menu" class="homepage">
-    <h1>Bienvenidx</h1>
+    <h1>BIENVENIDX</h1>
+    <form>
     <div id="button-red">
-       <a href="#list" title="close"><button id="button-red-1" type="button">POKEMONES</button></p></a>
-       <a href="#pokemon-centers" title="close"><button id="button-red-2" type="button">CENTROS POKEMONES</button></a>
-       <a href="https://pokemongolive.com/es/" title="close"><button id="button-red-3" type="button">JUGAR</button></a>
-      <a href="https://pokemongolive.com/es/" title="close"><button id="download" type="button">DESCARGA VERSIÓN LITE</button></a>
+       <a href="#list" title="close"><button id="button-red-1" class="click3" type="button">POKÉMONES</button></p></a>
+       <a href="#pokemon-centers" title="close"><button id="button-red-2" class="click3" type="button">Centros pokemon</button></a>
+       <a href="https://pokemongolive.com/es/" title="close"><button id="button-red-3" class="click3" type="button">JUGAR</button></a>
+      <a href="https://pokemongolive.com/es/" title="close"><button id="download" class="click3" type="button">Descargar versión Lite</button></a>
     </div>
+  </form>
     <a href="#homepage" title="close"><button id="close" type="button">CERRAR SESIÓN</button></a>
     <div class="button-blue">
      <p>OFFLINE</p>
@@ -47,14 +62,15 @@
         <span class="slider round"></span>
       </label>
     </div>
-
     </div>
   </section>
 
+  <!-- Pantalla 3, búsqueda, filtrado, ordenar, seleccionar acompañante -->
   <section id="list">
     <a href="#menu" title="close"><img src="imagenes/close (2).svg" /></a>
     <h1>POKÉMONES </h1>
-    <p><input id="Search" type="text" name="Buscar" placeholder="Búsqueda"></p>
+    <form>
+    <p><input id="Search" class="space" type="text" name="Buscar" placeholder="Búsqueda"></p>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
       integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <nav>
@@ -65,25 +81,25 @@
               <ul>
               </ul>
     </nav>
-    <p><button id="friend" type="button">Elegir acompañante</button></p>
-
+    <p><button id="friend" class="click" type="button">Elegir acompañante</button></p>
+</form>
   </section>
 
+  <!-- Tarjeta de información del pokemon -->
   <section id="pokemon-file">
     <a href="#menu" title="close"><img src="imagenes/close (2).svg" /></a>
 
-    <h3 id="pokemon-name">POKEMON</h3>
-    <h4 id="pokemon-type">TIPO</h4>
-    <div id="pokemon-image">IMAGEN</div>
-
-
+    <h3 id="pokemon-name">Pokémon</h3>
+    <h4 id="pokemon-type">Tipo</h4>
+    <div id="pokemon-image">Imagen</div>
   </section>
 
+  <!-- Pantalla 4, CENTROS POKEMON -->
   <section id="pokemon-centers">
     <a href="#menu" title="close"><img src="imagenes/close (2).svg" /></a>
     <h2>CENTROS POKEMÓN</h2>
     <div class="button-blue">
-      <p><button id="offline" type="button">OFFLINE</button>
+      <p><button id="offline" type="button">Offline</button>
         <label class="switch">
           <input type="checkbox" checked>
           <span class="slider round"></span></p>
@@ -96,7 +112,7 @@
     </div>
     <p><button id="vote" type="button">VOTAR</button></p>
     <p>Si quieres sugerir un nuevo Centro Pokemón, ubicate en la zona y da click en el bóton</p>
-    <p><button id="new" type="button">NUEVO CENTRO POKEMÓN</button></p>
+    <p><button id="new" type="button">Nuevo Centro Pokémon</button></p>
   </section>
 
   <script type="module" src="main.js"></script>

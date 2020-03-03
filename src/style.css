@@ -1,5 +1,61 @@
 
-    
+/*Estilo de fuente para toda la página*/
+*{
+  font-family: 'Maven Pro';
+}
+
+/*Quitar borde de cuadros para ingresar texto primera pantalla*/
+.space{
+  border-style:solid;
+  border-radius: 9px;
+  border-color: gray;
+  position:center;
+  background-color: gray;
+  font-size: 1.2em;
+}
+
+/*Botón sin borde primera pantalla*/
+.click{
+
+  border-style:solid;
+  border-radius: 20px;
+  border-color:yellow;
+  position:center;
+  background-color: yellow;
+  font-size: 1.2em;
+  color: black;
+}
+
+ /*Quitar borde de cuadros para ingresar texto 2a pantalla */
+.space2{
+  border-style:solid;
+  border-radius: 9px;
+  border-color: grey;
+  position:center;
+  background-color: gray;
+  font-size: 1.5em;
+}
+
+/*Botón sin borde 2a pantalla*/
+.click2{
+  border-style:solid;
+  border-radius: 20px;
+  border-color:yellow;
+  position:center;
+  background-color: yellow;
+  font-size: 1.2em;
+}
+
+/*Botón sin borde 3a pantalla*/
+.click3{
+  border-style:solid;
+  border-radius: 20px;
+  border-color: red;
+  position:center;
+  background-color: red;
+  font-size: 1.2em;
+}
+
 .switch {
     position: relative;
     display: inline-block;
@@ -34,7 +90,7 @@
   
   /*color azul */
   input:checked + .slider {
-    background-color:red;
+    background-color:blue;
   }
   
   
