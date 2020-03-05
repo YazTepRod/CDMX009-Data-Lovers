@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Data Lovers</title>
@@ -10,56 +11,67 @@
 
 <body>
 
-<!-- shift+alt+a Primera pantalla iniciar sesión -->
-  <section id="log-in">
-    <h1> Inicia Sesión </h1>
+  <!-- shift+alt+a Primera pantalla iniciar sesión -->
+  <section id="log-in" class="page1">
+    <img class="logo" src="imagenes-pokemon/logo1.png">
+    <h1> INICIAR SESIÓN </h1>
     <form>
-    <p><input id="User" class="space" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
-    <p><input id="Password" class="space" type="text" name="Contraseña" placeholder="Contraseña"></p>
-    <a href="#menu" title="close"><button id="Login" class="click" name="Entra">Ingresar</button></a>
-  </form>
-  <a href="https://www.instagram.com/pokemongoapp/?hl=es-la"><img src="instagram(1).svg"></a>
-  <a href="https://www.facebook.com/PokemonGO/"><img src="facebook.svg"></a>
-  <a href= "https://myaccount.google.com/intro"> <img src="google-hangouts.svg"></a>
-    <h3>¿Eres usuario nuevo?</h3>
-    <a href="#sign-in" title="login">Crear Cuenta</a>
+      <p><input id="User" class="userData" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
+      <p><input id="Password" class="userData" type="text" name="Contraseña" placeholder="Contraseña"></p>
+      <a href="#menu" title="close"><button id="enter" class="button-enter" name="Entra">Ingresar</button></a>
+    </form>
+    <a href="https://www.instagram.com/pokemongoapp/?hl=es-la"><img class="socialMedia" src="./imagenes-pokemon/instagram.svg"></a>
+    <a href="https://www.facebook.com/PokemonGO/"><img class="socialMedia" src="./imagenes-pokemon/facebook.svg"></a>
+    <a href="https://myaccount.google.com/intro"> <img class="socialMedia" src="./imagenes-pokemon/google.svg"></a>
+    <div class="newUser"></p><h3>¿Eres usuario nuevo?</h3>
+    <a href="#sign-in" title="login">Crear Cuenta</a></div>
   </section>
 
 
-<!-- Segunda pantalla Crear cuenta -->
-  <section id="sign-in">
-    <a href="#log-in" title="close"><img src="imagenes/close (1).svg" /></a>
-    <h1> Crear Cuenta </h1>
-<form>
-    <p><input id="User2" class="space2" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
-    <p><input id="email" class="space2" type="text" name="email1" placeholder="Correo Electrónico"></p>
-    <p><input id="Pass1" class="space2" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
-    <p><input id="Pass2" class="space2" type="text" name="Contraseña" placeholder="Contraseña"></p>
-   <a href="#menu" title="signin"> <button id="Login" class="click" name="Entra">CREAR CUENTA</button></a>
-  </form>
-   <h4>Iniciar con </h4>
-   <a href="https://www.instagram.com/pokemongoapp/?hl=es-la"><img src="instagram(1).svg"></a>
-   <a href="https://www.facebook.com/PokemonGO/"><img src="facebook.svg"></a>
-   <a href= "https://myaccount.google.com/intro"> <img src="google-hangouts.svg"></a>  </section>
+  <!-- Segunda pantalla Crear cuenta -->
+  <section id="sign-in" class="page2">
+    <a href="#log-in" title="close"><img class="closeIcon"src="./imagenes-pokemon/closeAmarrillo.svg" /></a>
+    <h2> CREAR CUENTA</h2>
+    <form class="newUserForm">
+      <p><input id="User2" class="userData" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
+      <p><input id="email" class="userData" type="text" name="email1" placeholder="Correo Electrónico"></p>
+      <p><input id="Pass1" class="userData" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
+      <p><input id="Pass2" class="userData" type="text" name="Contraseña" placeholder="Contraseña"></p>
+      <a href="#menu" title="signin"> <button id="Login" class="button-enter" name="Entra">CREAR CUENTA</button></a>
+    </form>
+    <h4>Iniciar con </h4>
+    <a href="https://www.instagram.com/pokemongoapp/?hl=es-la">
+      <img class="socialMedia" src="./imagenes-pokemon/instagram.svg"></a>
+    <a href="https://www.facebook.com/PokemonGO/">
+      <img class="socialMedia" src="./imagenes-pokemon/facebook.svg"></a>
+    <a href="https://myaccount.google.com/intro"> 
+      <img class="socialMedia" src="./imagenes-pokemon/google.svg"></a>
+  </section>
 
 
-<!-- Tercera pantalla. Pantalla principal de Pokendia Go! Menú -->
+  <!-- Tercera pantalla. Pantalla principal de Pokendia Go! Menú -->
   <section id="menu" class="homepage">
-    <h1>BIENVENIDX</h1>
+    <p class="titlePokemon" >BIENVENIDX</p>
     <form>
-    <div id="button-red">
-       <a href="#list" title="close"><button id="button-red-1" class="click3" type="button">POKÉMONES</button></p></a>
-       <a href="#pokemon-centers" title="close"><button id="button-red-2" class="click3" type="button">Centros pokemon</button></a>
-       <a href="https://pokemongolive.com/es/" title="close"><button id="button-red-3" class="click3" type="button">JUGAR</button></a>
-      <a href="https://pokemongolive.com/es/" title="close"><button id="download" class="click3" type="button">Descargar versión Lite</button></a>
-    </div>
-  </form>
-    <a href="#homepage" title="close"><button id="close" type="button">CERRAR SESIÓN</button></a>
-    <div class="button-blue">
-     <p>OFFLINE</p>
+      <div id="button-red" class="redButton">
+        <a href="#list" title="close"><button id="button-red" class="redButton" type="button">POKÉMONES</button></a>
+        <a href="#pokemon-centers" title="close"><button id="button-red-2" class="redButton" type="button">Centros
+            pokemon</button></a>
+        <a href="https://pokemongolive.com/es/" title="close"><button id="button-red-3" class="redButton"
+            type="button">JUGAR</button></a>
+
+      </div>
+    </form>
+
+    <div class="blueButton">
+      <p>OFFLINE</p>
       <label class="switch">
         <input type="checkbox" checked>
-        <span class="slider round"></span>
+        <span class="slider round"></span>        
+        <a href="https://pokemongolive.com/es/" title="close">
+        <button id="download"        type="button">Descargar versión Lite</button></a>
+        <a href="#homepage" title="close">
+        <button id="close" type="button">CERRAR SESIÓN</button></a>
       </label>
     </div>
     </div>
@@ -67,27 +79,27 @@
 
   <!-- Pantalla 3, búsqueda, filtrado, ordenar, seleccionar acompañante -->
   <section id="list">
-    <a href="#menu" title="close"><img src="imagenes/close (2).svg" /></a>
+    <a href="#menu" title="close"><img src="./imagenes-pokemon/closeRojo.svg" /></a>
     <h1>POKÉMONES </h1>
     <form>
-    <p><input id="Search" class="space" type="text" name="Buscar" placeholder="Búsqueda"></p>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <nav>
-      <ul>
-        <li class="submenu"><a href="#">Servicios</a><i class="far fa-caret-square-down more"></i>
-          <ul>
-            <li class="submenu"><a href="#">Servicios</a><i class="far fa-caret-square-down more"></i>
-              <ul>
-              </ul>
-    </nav>
-    <p><button id="friend" class="click" type="button">Elegir acompañante</button></p>
-</form>
+      <p><input id="Search" class="space" type="text" name="Buscar" placeholder="Búsqueda"></p>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+      <nav>
+        <ul>
+          <li class="submenu"><a href="#">Servicios</a><i class="far fa-caret-square-down more"></i>
+            <ul>
+              <li class="submenu"><a href="#">Servicios</a><i class="far fa-caret-square-down more"></i>
+                <ul>
+                </ul>
+      </nav>
+      <p><button id="friend" class="click" type="button">Elegir acompañante</button></p>
+    </form>
   </section>
 
   <!-- Tarjeta de información del pokemon -->
   <section id="pokemon-file">
-    <a href="#menu" title="close"><img src="imagenes/close (2).svg" /></a>
+    <a href="#menu" title="close"><img src="./imagenes-pokemon/closeRojo.svg" /></a>
 
     <h3 id="pokemon-name">Pokémon</h3>
     <h4 id="pokemon-type">Tipo</h4>
@@ -96,7 +108,7 @@
 
   <!-- Pantalla 4, CENTROS POKEMON -->
   <section id="pokemon-centers">
-    <a href="#menu" title="close"><img src="imagenes/close (2).svg" /></a>
+    <a href="#menu" title="close"><img src="./imagenes-pokemon/closeRojo.svg" /></a>
     <h2>CENTROS POKEMÓN</h2>
     <div class="button-blue">
       <p><button id="offline" type="button">Offline</button>

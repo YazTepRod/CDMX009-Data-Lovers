@@ -1,59 +1,141 @@
 
 /*Estilo de fuente para toda la página*/
 *{
-  font-family: 'Maven Pro';
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100%;
 }
 
-/*Quitar borde de cuadros para ingresar texto primera pantalla*/
-.space{
-  border-style:solid;
-  border-radius: 9px;
-  border-color: gray;
+.page1{
+  background-image : url(./imagenes-pokemon/fondoPagina1.jpg);
+  text-align: center;
+}
+
+.logo{
+  width: 300px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+h1{
+  font-size: 30px;
+  color: white;
+  padding-bottom: 20px;
+}
+
+/*botones de ingreso*/
+.userData{
+  border-style:none;
+  border-radius: 10px;
   position:center;
   background-color: gray;
+  opacity: .4;
   font-size: 1.2em;
+  width: 250px;
+  height: 35px;
+  margin-bottom: 10px
+  /*line-height: 20px;*/ /*revisar salto de linea*/
 }
 
-/*Botón sin borde primera pantalla*/
-.click{
-
-  border-style:solid;
-  border-radius: 20px;
-  border-color:yellow;
-  position:center;
-  background-color: yellow;
-  font-size: 1.2em;
+::placeholder{
   color: black;
+  text-align: center;
+  font-weight: lighter;
 }
 
- /*Quitar borde de cuadros para ingresar texto 2a pantalla */
-.space2{
-  border-style:solid;
-  border-radius: 9px;
-  border-color: grey;
-  position:center;
-  background-color: gray;
-  font-size: 1.5em;
-}
-
-/*Botón sin borde 2a pantalla*/
-.click2{
-  border-style:solid;
-  border-radius: 20px;
-  border-color:yellow;
+/*Botón ingresar*/
+.button-enter{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-style: none;
+  border-radius: 10px;
   position:center;
   background-color: yellow;
-  font-size: 1.2em;
+  font-size: 0.9em;
+  color: black;
+  width: 100px;
+  height: 30px;
 }
 
-/*Botón sin borde 3a pantalla*/
-.click3{
-  border-style:solid;
-  border-radius: 20px;
-  border-color: red;
-  position:center;
+/*botones redes sociales*/
+.socialMedia{
+margin-bottom: 30px;
+width: 40px;
+}
+
+.newUser{
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  
+}
+
+.page2{
+  background-image : url(./imagenes-pokemon/fondoPagina1.jpg);
+  text-align: center;
+  margin-bottom: 100px;;
+}
+
+.closeIcon{
+  width: 20px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+h2{
+  font-size: 30px;
+  color: white;
+  padding-top: 150px;
+  padding-bottom: 20px;
+}
+
+.newUserForm{
+  padding-bottom: 50px;
+}
+
+h4{
+  color: white;
+  padding: 20px;
+}
+
+.homepage{
+  background-image : url(./imagenes-pokemon/fondoPagina2.png);
+  margin-top: -100px;
+  padding-bottom: 700px;
+ }
+
+ .titlePokemon{
+   color:#00214E;
+   font-size: 30px;
+   text-align: center;
+   font-weight: bolder;
+   padding-top: 70px;
+   padding-bottom: 50px;
+ }
+
+.redButton{
+  border-style:none;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
   background-color: red;
   font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.blueButton{
+  border-style:none;
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  background-color: #00214E;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+
+}
+
+.redButton-1{
+  opacity: 0.40;
 }
 
 .switch {
@@ -113,30 +195,56 @@
   
   /*Menú desplegable*/
   *{
-      box-sizing:border-box;
-      margin:0;
-      padding:0;
-      }
+     box-sizing:border-box;
+     margin:0;
+     padding:0;
+     }
                     
-      li{
-      list-style-type:none;
-      position:relative;
-      width:120px;
-      }
+     li{
+     list-style-type:none;
+     position:relative;
+     width:120px;
+     }
                   
-      li a{
-      text-decoration:none;
-      display:inline-block;
-      padding:5px 10px;
-      width:120px;
-      height:30px;
-      border:1px solid #000;
-      color:#000;
-      }
+    li a{
+    text-decoration:none;
+    display:inline-block;
+    padding:5px 10px;
+    width:120px;
+    height:30px;
+    border:1px solid #000;
+    color:#000;
+    }
               
-      .more{
-          display:inline-block;
-          position:absolute;
-          right:0px;
-          font-size:30px;
-      }       
+    .more{
+     display:inline-block;
+     position:absolute;
+     right:0px;
+     font-size:30px;
+     }       
+
+ #log-in{
+        display: inline-block;
+      }
+      
+      #sign-in{
+        display: none;
+      }
+      #menu{
+         display: none;
+      }
+      #button-red-1{
+        display: inline-block;
+      }
+      
+      #list{
+        display:none;
+      }
+      
+      #pokemon-file{
+        display:none;
+      }
+      
+      #pokemon-centers{
+        display:none;
+      }
