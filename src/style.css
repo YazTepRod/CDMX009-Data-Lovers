@@ -2,21 +2,27 @@
 /*Estilo de fuente para toda la página*/
 *{
   font-family: 'Maven Pro';
+  margin: 0;
+  padding: 0;
 }
 
 /*Quitar borde de cuadros para ingresar texto primera pantalla*/
 .space{
   border-style:solid;
   border-radius: 9px;
-  border-color: gray;
+  border-color: grey;
   position:center;
-  background-color: gray;
-  font-size: 1.2em;
+  background-color: grey;
+  font-size: 0.5em;
+  margin: 0 0 15px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+  font-weight: 400;
 }
 
 /*Botón sin borde primera pantalla*/
 .click{
-
   border-style:solid;
   border-radius: 20px;
   border-color:yellow;
@@ -24,6 +30,7 @@
   background-color: yellow;
   font-size: 1.2em;
   color: black;
+  text-align: center;
 }
 
  /*Quitar borde de cuadros para ingresar texto 2a pantalla */
@@ -32,8 +39,12 @@
   border-radius: 9px;
   border-color: grey;
   position:center;
-  background-color: gray;
-  font-size: 1.5em;
+  background-color: grey;
+  font-size: 0.5em;
+  margin: 0 0 15px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
 }
 
 /*Botón sin borde 2a pantalla*/
@@ -44,6 +55,7 @@
   position:center;
   background-color: yellow;
   font-size: 1.2em;
+  text-align: center;
 }
 
 /*Botón sin borde 3a pantalla*/
@@ -54,7 +66,47 @@
   position:center;
   background-color: red;
   font-size: 1.2em;
+  text-align: center;
 }
+
+.click4{
+  border-style:solid;
+  border-radius: 20px;
+  border-color:blue;
+  position:center;
+  background-color: blue;
+  font-size: 1.2em;
+
+}
+ 
+#log-in{
+  display: inline-block;
+}
+
+#sign-in{
+  display: none;
+}
+#menu{
+   display: none;
+}
+#button-red-1{
+  display: inline-block;
+}
+
+#list{
+  display:none;
+}
+
+#pokemon-file{
+  display:none;
+}
+
+#pokemon-centers{
+  display:none;
+}
+
+
+
 
 .switch {
     position: relative;
