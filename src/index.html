@@ -3,12 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Data Lovers</title>
+  <title>Data Lovers Pokémon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <!-- shift+alt+a Primera pantalla iniciar sesión -->
@@ -53,6 +52,7 @@
   <section id="menu" class="homepage">
     <p class="titlePokemon" >BIENVENIDX</p>
     <form>
+<<<<<<< HEAD
       <div id="button-red" class="redButton">
         <a href="#list" title="close"><button id="button-red" class="redButton" type="button">POKÉMONES</button></a>
         <a href="#pokemon-centers" title="close"><button id="button-red-2" class="redButton" type="button">Centros
@@ -65,6 +65,18 @@
 
     <div class="blueButton">
       <p>OFFLINE</p>
+=======
+    <div id="button-red">
+       <a href="#list" title="close"><button id="button-red-1" class="click3" type="button">POKÉMONES</button></p></a>
+       <a href="#pokemon-centers" title="close"><button id="button-red-2" class="click3" type="button">Centros pokemon</button></a>
+       <a href="https://pokemongolive.com/es/" title="close"><button id="button-red-3" class="click3" type="button">JUGAR</button></a>
+      <a href="https://pokemongolive.com/es/" title="close"><button id="download" class="click3" type="button">Descargar versión Lite</button></a>
+    </div>
+  </form>
+    <a href="#homepage" title="close"><button id="close" class="click" type="button">CERRAR SESIÓN</button></a>
+    <div class="button-blue">
+     <p>Offline</p>
+>>>>>>> f631a55abec191462d1e46a17c15b6dadc65b66b
       <label class="switch">
         <input type="checkbox" checked>
         <span class="slider round"></span>        
@@ -82,6 +94,7 @@
     <a href="#menu" title="close"><img src="./imagenes-pokemon/closeRojo.svg" /></a>
     <h1>POKÉMONES </h1>
     <form>
+<<<<<<< HEAD
       <p><input id="Search" class="space" type="text" name="Buscar" placeholder="Búsqueda"></p>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
@@ -95,6 +108,41 @@
       </nav>
       <p><button id="friend" class="click" type="button">Elegir acompañante</button></p>
     </form>
+=======
+    <p><input id="Search" class="space" type="text" name="Buscar" placeholder="Búsqueda"></p>
+<div id="listPoke">
+    <div id="listOrderPoke">
+     <select id="orderpokemon" class="type-select">
+       <option value="00">Ordena por...</option>
+       <option value="01"> N° Descendente</option>
+       <option value="02"> N° Ascendente</option>
+       <option value="03"> A-Z</option>
+       <option value="04"> Z-A</option>
+  </select>
+</div>
+
+<div id="listTypePoke" class="fortype">
+  <select id="typepokemon">
+    <option value="00">Por tipo ...</option>
+    <option value="01">Agua</option>
+    <option value="02">Bicho</option>
+    <option value="03">Dragon</option>
+    <option value="04">Electrico</option>
+    <option value="04">Fantasma</option>
+    <option value="05">Fuego</option>
+    <option value="06">Hielo</option>
+    <option value="07">Lucha</option>
+    <option value="08">Normal</option>
+    <option value="09">Hierba</option>
+    <option value="10">Psiquico</option>
+    <option value="11">Roca</option>
+    <option value="12">Tierra</option>
+    <option value="13">Veneno</option>
+    <option value="14">Volador</option>
+  </select>
+    <p><button id="friend" class="click" type="button">Elegir acompañante</button></p>
+</form>
+>>>>>>> f631a55abec191462d1e46a17c15b6dadc65b66b
   </section>
 
   <!-- Tarjeta de información del pokemon -->
@@ -111,7 +159,7 @@
     <a href="#menu" title="close"><img src="./imagenes-pokemon/closeRojo.svg" /></a>
     <h2>CENTROS POKEMÓN</h2>
     <div class="button-blue">
-      <p><button id="offline" type="button">Offline</button>
+      <p>Offline</p>
         <label class="switch">
           <input type="checkbox" checked>
           <span class="slider round"></span></p>
@@ -122,12 +170,15 @@
     <div class="conteiner">
       <h3>Votación para nuevos Centros Pokemón</h3>
     </div>
-    <p><button id="vote" type="button">VOTAR</button></p>
+    <p><button id="vote" class="click4" type="button">Votar</button></p>
     <p>Si quieres sugerir un nuevo Centro Pokemón, ubicate en la zona y da click en el bóton</p>
-    <p><button id="new" type="button">Nuevo Centro Pokémon</button></p>
+    <p><button id="new" class="click4" type="button">Nuevo Centro Pokémon</button></p>
   </section>
-
+  <script src="./data/pokemon/pokemon.js"></script>
+  <script src="data.js"></script>
   <script type="module" src="main.js"></script>
+ 
+
 </body>
 
 </html>
