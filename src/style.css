@@ -114,23 +114,51 @@ h4{
  }
 
 .redButton{
+    border-style:none;
+    border-radius: 10px;
+    position:center;
+    background-color: red;
+    opacity: .9;
+    font-size: 1.2em;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10px;
+  display: block;
+  position: relative;
+  left: 110px;
+  margin-bottom: 30px;
+ }
+
+.redButton2{
   border-style:none;
   border-radius: 10px;
-  width: 150px;
-  height: 50px;
+  position:center;
   background-color: red;
   font-size: 1.2em;
-  margin-bottom: 20px;
+  width: 150px;
+  height: 50px;
+  margin-bottom: 10px;
+  display: block;
+  position: relative;
+  left: 110px;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .blueButton{
   border-style:none;
   border-radius: 10px;
+  position:center;
+  background-color:#00214E;
+  font-size: 1.2em;
   width: 150px;
   height: 50px;
-  background-color: #00214E;
-  font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  display: block;
+  position: relative;
+  left: 110px;
+  margin-bottom: 30px;
+  font-weight: bold;
 
 }
 
@@ -225,7 +253,7 @@ h4{
      right:0px;
      font-size:30px;
      }       
-
+/* 
  #log-in{
         display: inline-block;
       }
@@ -250,4 +278,4 @@ h4{
       
       #pokemon-centers{
         display:none;
-      }
+      } */

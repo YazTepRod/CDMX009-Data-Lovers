@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <!-- shift+alt+a Primera pantalla iniciar sesión -->
+  <!--Primera pantalla iniciar sesión -->
   <section id="log-in" class="page1">
     <img class="logo" src="imagenes-pokemon/logo1.png">
     <h1> INICIAR SESIÓN </h1>
@@ -52,64 +52,41 @@
   <section id="menu" class="homepage">
     <p class="titlePokemon" >BIENVENIDX</p>
     <form>
-<<<<<<< HEAD
-      <div id="button-red" class="redButton">
+
+      <div id="button-red">
         <a href="#list" title="close"><button id="button-red" class="redButton" type="button">POKÉMONES</button></a>
         <a href="#pokemon-centers" title="close"><button id="button-red-2" class="redButton" type="button">Centros
             pokemon</button></a>
-        <a href="https://pokemongolive.com/es/" title="close"><button id="button-red-3" class="redButton"
+        <a href="https://pokemongolive.com/es/" title="close"><button id="button-red-3" class="redButton2"
             type="button">JUGAR</button></a>
 
       </div>
     </form>
 
     <div class="blueButton">
-      <p>OFFLINE</p>
-=======
-    <div id="button-red">
-       <a href="#list" title="close"><button id="button-red-1" class="click3" type="button">POKÉMONES</button></p></a>
-       <a href="#pokemon-centers" title="close"><button id="button-red-2" class="click3" type="button">Centros pokemon</button></a>
-       <a href="https://pokemongolive.com/es/" title="close"><button id="button-red-3" class="click3" type="button">JUGAR</button></a>
-      <a href="https://pokemongolive.com/es/" title="close"><button id="download" class="click3" type="button">Descargar versión Lite</button></a>
-    </div>
+      OFFLINE </div>
+      <a href="https://pokemongolive.com/es/" title="close"><button id="download" class="blueButton" type="button">Descargar versión Lite</button></a>
   </form>
-    <a href="#homepage" title="close"><button id="close" class="click" type="button">CERRAR SESIÓN</button></a>
+    <a href="#homepage" title="close"><button id="close" class="blueButton" type="button">CERRAR SESIÓN</button></a>
     <div class="button-blue">
      <p>Offline</p>
->>>>>>> f631a55abec191462d1e46a17c15b6dadc65b66b
+
       <label class="switch">
         <input type="checkbox" checked>
         <span class="slider round"></span>        
-        <a href="https://pokemongolive.com/es/" title="close">
-        <button id="download"        type="button">Descargar versión Lite</button></a>
-        <a href="#homepage" title="close">
-        <button id="close" type="button">CERRAR SESIÓN</button></a>
-      </label>
+       </label>
     </div>
     </div>
   </section>
 
   <!-- Pantalla 3, búsqueda, filtrado, ordenar, seleccionar acompañante -->
   <section id="list">
-    <a href="#menu" title="close"><img src="./imagenes-pokemon/closeRojo.svg" /></a>
+    <img class="closeIcon" src="./imagenes-pokemon/closeRojo.svg" /></a>
     <h1>POKÉMONES </h1>
     <form>
-<<<<<<< HEAD
       <p><input id="Search" class="space" type="text" name="Buscar" placeholder="Búsqueda"></p>
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-      <nav>
-        <ul>
-          <li class="submenu"><a href="#">Servicios</a><i class="far fa-caret-square-down more"></i>
-            <ul>
-              <li class="submenu"><a href="#">Servicios</a><i class="far fa-caret-square-down more"></i>
-                <ul>
-                </ul>
-      </nav>
       <p><button id="friend" class="click" type="button">Elegir acompañante</button></p>
     </form>
-=======
-    <p><input id="Search" class="space" type="text" name="Buscar" placeholder="Búsqueda"></p>
 <div id="listPoke">
     <div id="listOrderPoke">
      <select id="orderpokemon" class="type-select">
@@ -140,14 +117,15 @@
     <option value="13">Veneno</option>
     <option value="14">Volador</option>
   </select>
-    <p><button id="friend" class="click" type="button">Elegir acompañante</button></p>
-</form>
->>>>>>> f631a55abec191462d1e46a17c15b6dadc65b66b
+
+<section id="listPokemon">
+
+</section>
   </section>
 
   <!-- Tarjeta de información del pokemon -->
   <section id="pokemon-file">
-    <a href="#menu" title="close"><img src="./imagenes-pokemon/closeRojo.svg" /></a>
+    <a href="#menu" title="close"><img class="closeIcon" src="./imagenes-pokemon/closeRojo.svg" /></a>
 
     <h3 id="pokemon-name">Pokémon</h3>
     <h4 id="pokemon-type">Tipo</h4>
@@ -156,7 +134,8 @@
 
   <!-- Pantalla 4, CENTROS POKEMON -->
   <section id="pokemon-centers">
-    <a href="#menu" title="close"><img src="./imagenes-pokemon/closeRojo.svg" /></a>
+    <a href="#menu" title="close">
+    <img class="closeIcon" src="./imagenes-pokemon/closeRojo.svg" /></a>
     <h2>CENTROS POKEMÓN</h2>
     <div class="button-blue">
       <p>Offline</p>
@@ -174,8 +153,8 @@
     <p>Si quieres sugerir un nuevo Centro Pokemón, ubicate en la zona y da click en el bóton</p>
     <p><button id="new" class="click4" type="button">Nuevo Centro Pokémon</button></p>
   </section>
-  <script src="./data/pokemon/pokemon.js"></script>
-  <script src="data.js"></script>
+  <script src="./pokemon.json"></script>
+  <script type="module" src="data.js"></script>
   <script type="module" src="main.js"></script>
  
 
