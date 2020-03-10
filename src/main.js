@@ -1,26 +1,29 @@
+import data from "./pokemon.js";
 
-import   { poke }  from "./data.js";
-let data = './pokemon.json'
-/* const pokemonArr = pokemon 
-const pokemons= pokemon.pokemon 
-pokemons.map(pokes =>console.log(pokes.pokemon));
- */
+let lista = document.querySelector('#listPokemon')
 
+let catalogue = data.pokemon;
+console.log(catalogue);
 
-friend.onclick = function(){
-    document.getElementById("listPokemon").value = poke.showPokemon (data);
-    document.getElementById("listPokemon").innerHTML = poke.showPokemon (data);
+function generateCard(pokemon){
+    let div = document.createElement('div')
+    div.innerHTML = `
+    <div class="card">
+    <img src="${pokemon.img}" />
+    <p>${pokemon.name}</p>
+    </div>
+    `
+    return div
 }
- 
+
+// 1.- recorrer (for each)
+catalogue.forEach(poke=>{
+//2.- dibujar cada card 
+//3.- colocar!!!!!! cada card en la lista
+lista.appendChild(generateCard(poke))
+})
 
 
 
 
-/* 
-document.getElementById('log-in').addEventListener('click',()=>{
-    document.getElementById('sign-in').style.display = 'none';
-    document.getElementById('menu').style.display = 'block';
-    document.getElementById('list').style.display = 'none'; 
-    document.getElementById('pokemon-centers').style.display = 'none';
-    document.getElementById('pokemon-file').style.display = 'none';
-}) */
+// 4.- Listeners de click ----
