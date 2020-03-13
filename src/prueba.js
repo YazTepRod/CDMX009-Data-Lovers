@@ -1,3 +1,38 @@
+/* import data from "./pokemon.js";
+import pokemon from "./pokemon.js";
+
+let lista = document.querySelector('#lista');
+let catalogue = data.pokemon;
+
+catalogue.forEach(poke => {
+    lista.appendChild(generateCard(poke));
+})
+
+function generateCard(pokemon) {
+    let container = document.createElement('div');
+    container.id = "pokedex";
+    container.className = "pokedexClass"// id a el conteneder de cada pokemon, para poder usar un listener y abrir la tarjeta con informacion  pokemon.name
+    container.innerHTML = ` 
+    <div id="cardPoke" class="card">
+    <img src="${pokemon.img}" />
+    <p>${pokemon.name}</p>
+    </div>
+    `
+    container.addEventListener("click", onClickCard);
+    return container;
+
+    function onClickCard(e) {
+        let cardInfo = document.createElement("div");
+        cardInfo.innerHTML = ` 
+        <p>${pokemon.name}</p>
+        <p>${pokemon.id}</p>
+        </div>
+        `
+        document.querySelector("body").appendChild(cardInfo);
+        console.log(cardInfo); 
+}
+
+ */
 import data from "./pokemon.js";
 import pokemon from "./pokemon.js";
 
