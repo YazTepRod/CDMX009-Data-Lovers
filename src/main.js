@@ -34,7 +34,7 @@ function generateCard(pokemon) {
                 modal.style.display = "block";
             }
             closed.onclick = function () {     // cierra modal
-                modal.style.display = "none";
+                modal.style.display = "none"; // revisar por que no cierra, no funciona el boton
             }
             window.onclick = function (event) { //cierra modal
                 if (event.target == cardInfo) {
