@@ -1,6 +1,86 @@
 import data from "./pokemon.js";
-import pokemon from "./pokemon.js";
+//import pokemon from "./pokemon.js";
 
+//Devuelve el primer elemento que es #allThePokemones.
+let list = document.querySelector ('#allThePokemones')
+
+let catalogue1= data.pokemon;
+
+//Mostramos en consola los arrays
+console.log (catalogue1);
+
+//Se diseña la tarjeta donde se mostrarán los pokémones
+function generatePokeCard(pokemon){
+  let  div = document.createElement ('div')
+  div.innerHTML = `
+  <div class="card">
+  <img src="${pokemon.img}"/>
+  <p>${pokemon.id}</p>
+  <p><p>${pokemon.name}</p>
+  <p>${pokemon.type}</p>
+  <p>${pokemon.weaknesses}</p>
+  </div>
+  `
+  return div
+}
+
+// 1.- recorrer (for each)
+catalogue1.forEach(poke=>{
+  //2.- dibujar cada card 
+  //3.- colocar!!!!!! cada card en la lista
+  list.appendChild(generatePokeCard(poke))
+  });
+
+//Ordenar los datos 
+document.getElementById('orderpokemon').addEventListener('click', (evt)=>{
+const selectedIndex = evt.currentTarget.selectedIndex;
+if (selectedIndex === 3){
+   catalogue1(list.sort(poke, 'name', 'A-Z'));
+}else if (selectedIndex === 4) {
+  catalogue1(list.sort(poke, 'name', 'Z-A'));
+} else if (selectedIndex === 2) {
+  catalogue1(list.sort(poke, 'number', 'asc'));
+} else if (selectedIndex === 1) {
+  catalogue1(list.sort(poke, 'number', 'des'));
+} 
+});
+
+document.getElementById('typepokemon').addEventListener('change', (evt) => {
+  const selectedIndex = evt.currentTarget.selectedIndex;
+  if (selectedIndex === 1) {
+    catalogue1(list.filterData(poke, 'Water'));
+  } else if (selectedIndex === 2) {
+    catalogue1(list.filterData(poke, 'Bug'));
+  } else if (selectedIndex === 3) {
+    catalogue1(list.filterData(poke, 'Dragon'));
+  } else if (selectedIndex === 4) {
+    catalogue1(list.filterData(poke, 'Electric'));
+  } else if (selectedIndex === 5) {
+    catalogue1(list.filterData(poke, 'Ghost'));
+  } else if (selectedIndex === 6) {
+    catalogue1(list.filterData(poke, 'Fire'));
+  } else if (selectedIndex === 7) {
+    catalogue1(list.filterData(poke, 'Ice'));
+  } else if (selectedIndex === 8) {
+    catalogue1(list.filterData(poke, 'Fighting'));
+  } else if (selectedIndex === 9) {
+    catalogue1(list.filterData(poke, 'Normal'));
+  } else if (selectedIndex === 10) {
+    catalogue1(list.filterData(poke, 'Grass'));
+  } else if (selectedIndex === 11) {
+    catalogue1(list.filterData(poke, 'Psychic'));
+  } else if (selectedIndex === 12) {
+    catalogue1(list.filterData(poke, 'Rock'));
+  } else if (selectedIndex === 13) {
+    catalogue1(list.filterData(poke, 'Ground'));
+  } else if (selectedIndex === 14) {
+    catalogue1(list.filterData(poke, 'Poison'));
+  } else if (selectedIndex === 15) {
+    catalogue1(list.filterData(poke, 'Flying'));
+  } 
+});
+
+//Tarjeta para visualizar más información sobre el pokémon 
 let lista = document.querySelector('#lista');
 let catalogue = data.pokemon;
 

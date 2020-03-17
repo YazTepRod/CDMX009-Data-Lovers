@@ -8,7 +8,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <!--Primera pantalla iniciar sesión -->
@@ -20,21 +19,17 @@
       <p><input id="Password" class="userData" type="text" name="Contraseña" placeholder="Contraseña"></p>
       <a href="#menu" title="close"><button id="enter" class="button-enter" name="Entra">Ingresar</button></a>
     </form>
-    <a href="https://www.instagram.com/pokemongoapp/?hl=es-la"><img class="socialMedia"
-        src="./imagenes-pokemon/instagram.svg"></a>
+    <a href="https://www.instagram.com/pokemongoapp/?hl=es-la"><img class="socialMedia" src="./imagenes-pokemon/instagram.svg"></a>
     <a href="https://www.facebook.com/PokemonGO/"><img class="socialMedia" src="./imagenes-pokemon/facebook.svg"></a>
     <a href="https://myaccount.google.com/intro"> <img class="socialMedia" src="./imagenes-pokemon/google.svg"></a>
-    <div class="newUser">
-      </p>
-      <h3>¿Eres usuario nuevo?</h3>
-      <a href="#sign-in" title="login">Crear Cuenta</a>
-    </div>
+    <div class="newUser"></p><h3>¿Eres usuario nuevo?</h3>
+    <a href="#sign-in" title="login">Crear Cuenta</a></div>
   </section>
 
 
   <!-- Segunda pantalla Crear cuenta -->
   <section id="sign-in" class="page2">
-    <a href="#log-in" title="close"><img class="closeIcon" src="./imagenes-pokemon/closeAmarrillo.svg" /></a>
+    <a href="#log-in" title="close"><img class="closeIcon"src="./imagenes-pokemon/closeAmarrillo.svg" /></a>
     <h2> CREAR CUENTA</h2>
     <form class="newUserForm">
       <p><input id="User2" class="userData" type="text" name="Usuario" placeholder="Nombre de Usuario"></p>
@@ -48,14 +43,14 @@
       <img class="socialMedia" src="./imagenes-pokemon/instagram.svg"></a>
     <a href="https://www.facebook.com/PokemonGO/">
       <img class="socialMedia" src="./imagenes-pokemon/facebook.svg"></a>
-    <a href="https://myaccount.google.com/intro">
+    <a href="https://myaccount.google.com/intro"> 
       <img class="socialMedia" src="./imagenes-pokemon/google.svg"></a>
   </section>
 
 
   <!-- Tercera pantalla. Pantalla principal de Pokendia Go! Menú -->
   <section id="menu" class="homepage">
-    <p class="titlePokemon">BIENVENIDX</p>
+    <p class="titlePokemon" >BIENVENIDX</p>
     <form>
 
       <div id="button-red">
@@ -70,17 +65,16 @@
 
     <div class="blueButton">
       OFFLINE </div>
-    <a href="https://pokemongolive.com/es/" title="close"><button id="download" class="blueButton"
-        type="button">Descargar versión Lite</button></a>
-    </form>
+      <a href="https://pokemongolive.com/es/" title="close"><button id="download" class="blueButton" type="button">Descargar versión Lite</button></a>
+  </form>
     <a href="#homepage" title="close"><button id="close" class="blueButton" type="button">CERRAR SESIÓN</button></a>
     <div class="button-blue">
-      <p>Offline</p>
+     <p>Offline</p>
 
       <label class="switch">
         <input type="checkbox" checked>
-        <span class="slider round"></span>
-      </label>
+        <span class="slider round"></span>        
+       </label>
     </div>
     </div>
   </section>
@@ -90,24 +84,27 @@
     <img class="closeIcon" src="./imagenes-pokemon/closeRojo.svg" /></a>
     <h1>POKÉMONES </h1>
     <form>
-      <p><input id="Search" class="space" type="text" name="Buscar" placeholder="Búsqueda"></p>
-      <p><button id="friend" class="click" type="button">Elegir acompañante</button></p>
-      <button id="test"></button>
+      <!-- <p><input id="Search" class="space" type="text" name="Buscar" placeholder="Búsqueda"></p>
+      <button id="test"></button> -->
     </form>
-    <div id="listPoke">
+
+    <!-- Ordenado y filtrado de pokemones -->
+
+    <div id="listdePokemones">
       <div id="listOrderPoke">
-        <select id="orderpokemon" class="type-select">
-          <option value="00">Ordena por...</option>
-          <option value="01"> N° Descendente</option>
-          <option value="02"> N° Ascendente</option>
-          <option value="03"> A-Z</option>
-          <option value="04"> Z-A</option>
-        </select>
+          <select id="orderpokemon" class="type-select">
+            <option > Ordenar por ...</option>
+            <option value="00"> N° Descendente </option>
+            <option value="01"> N° Ascendente </option>
+            <option value="02"> A - Z </option>
+            <option value="03"> Z - A </option>
+          </select>
       </div>
 
-      <div id="listTypePoke" class="fortype">
+      <!-- Listado de pokemones por tipo -->
+      <div id="listTypePoke">
         <select id="typepokemon">
-          <option value="00">Por tipo ...</option>
+          <option value="00">Filtrar...</option>
           <option value="01">Agua</option>
           <option value="02">Bicho</option>
           <option value="03">Dragon</option>
@@ -124,42 +121,41 @@
           <option value="13">Veneno</option>
           <option value="14">Volador</option>
         </select>
+             <!--Aquí se va mostrar imagen, nombre y numero que se esta llamando a partir de main.js -->
+        <div id="allThePokemones">  </div>
+      </div>
 
-<!-- agregado recientemente -->
-
-        <div id="lista">
-        </div>
-        <div id="cardRotada">
-        </div>
-
-
-        <div id="myModal" class="modal">
-                    <div id="close" class="close">&times;</div>
-                    <div id="infoPoke"></div>
-       </div>
-       <!-- hasta aqui -->
-
-  </section>
-
+    
   <!-- Tarjeta de información del pokemon -->
-  <section id="pokemon-file">
+  <div id="lista">
+  </div>
+  <div id="cardRotada">
+  </div>
+
+
+  <div id="myModal" class="modal">
+              <div id="close" class="close">&times;</div>
+              <div id="infoPoke"></div>
+ </div>
+
+  <!-- <section id="pokemon-file">
     <a href="#menu" title="close"><img class="closeIcon" src="./imagenes-pokemon/closeRojo.svg" /></a>
 
     <h3 id="pokemon-name">Pokémon</h3>
     <h4 id="pokemon-type">Tipo</h4>
     <div id="pokemon-image">Imagen</div>
   </section>
-
+ -->
   <!-- Pantalla 4, CENTROS POKEMON -->
   <section id="pokemon-centers">
     <a href="#menu" title="close">
-      <img class="closeIcon" src="./imagenes-pokemon/closeRojo.svg" /></a>
+    <img class="closeIcon" src="./imagenes-pokemon/closeRojo.svg" /></a>
     <h2>CENTROS POKEMÓN</h2>
     <div class="button-blue">
       <p>Offline</p>
-      <label class="switch">
-        <input type="checkbox" checked>
-        <span class="slider round"></span></p>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span></p>
     </div>
     <div class="conteiner">
       <h3>Zonas cercanas de Centros Pokemón</h3>
@@ -171,10 +167,11 @@
     <p>Si quieres sugerir un nuevo Centro Pokemón, ubicate en la zona y da click en el bóton</p>
     <p><button id="new" class="click4" type="button">Nuevo Centro Pokémon</button></p>
   </section>
-  <script type="module" src="./pokemon.js"></script>
+  
+   <script type="module" src="./data/pokemon/pokemon.js"></script> 
   <script type="module" src="main.js"></script>
-  <script type="module" src="data.js"></script>
-
+ <script type="module" src="data.js"></script> 
+ 
 
 </body>
 
