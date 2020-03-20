@@ -1,5 +1,5 @@
 import data from "./pokemon.js";
-import { onChange } from "./main.js";
+import { getPokemonType } from "./main.js";
 
 let lista = document.querySelector('#listado');
 let catalogue = data.pokemon;
@@ -68,7 +68,6 @@ typeFilter.forEach(opctionFilter=> opctionFilter.addEventListener("click", e =>{
 }))
 
 
-/*     typeFilter.forEach(opctionFilter => opctionFilter.addEventListener("click", e =>{
+    typeFilter.forEach(opctionFilter => opctionFilter.addEventListener("click", e =>{
         generateCard(getPokemonType(e.target.id))
     }));
- */
