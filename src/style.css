@@ -263,10 +263,28 @@ h4{
         font-weight: bold;
       }
       
-      .close:hover,
-      .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-      }
+      #orderpokemon, #typepokemon {
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        margin: 120px auto;
+        background: blue;
+        border: none;
+        border-radius: 12px;
+        color: #ffffff;
+        padding: 10px 40px 10px 30px;
+        margin-bottom: 10px;
+        align-content: center;
+        font-size: 18px;
+    }
+      #orderpokemon:hover, #typepokemon:hover {
+        background: rgb(35,95,190);
+    }
+    
+    #allThePokemones {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 20px 40px 100px;
+       
+    }
       
