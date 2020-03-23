@@ -38,6 +38,7 @@ function filterType(type) {
     });
     return sortNumber;
   }
+
   const pokemons = {
     filterType, sortbyNameAZ, sortbyNameZA, sortbyNumber,
   };

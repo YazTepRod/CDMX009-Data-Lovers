@@ -1,15 +1,5 @@
 # Data Lovers
 
-## Índice
-
-* [1. Objetivos de aprendizaje](#1-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Parte adicional-opcional (extensión)](#6-parte-adicional-opcional-extensión)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-
-
 ## 1. Objetivos de aprendizaje 
 
 Vanya Xel Jimenez Sanpedro
@@ -154,7 +144,7 @@ Para: Poder jugar
 
 Criterios de aceptación:
 
-1.- Abrir app
+Abrir app
 2.- Seleccionar Crear cuenta o iniciar sesión
 3.- Dar opción de incio o registro con RR.SS o cuenta de correo electrónico y contraseña
 4.- Verificar cuenta con código enviado a correo o teléfono celular
@@ -257,7 +247,7 @@ Tareas
 ![lol](menu.png)
 ![lol](catalogo.png)
 ![lol](modal.png)
-![lol](centroPokemon.png)
+![lol](centrosDesktop.png)
 
 #### Testeos de usabilidad
 
